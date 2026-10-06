@@ -1,0 +1,29 @@
+/* Relight : site public (assistance, confidentialité, informations légales). Clair ou sombre selon l'appareil. */
+:root {
+  --fond: #F4F3EF; --carte: #FFFFFF; --bord: #E3E1DB; --texte: #16181C; --texte2: #4A4F57;
+  --accent: #B76A00; --signal: #F29A1C; --rouge: #E5483A;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --fond: #0F1115; --carte: #171A1F; --bord: #2C313A; --texte: #ECEEF2; --texte2: #A7ACB4; --accent: #FFAB2E; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond); color: var(--texte); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+a { color: var(--accent); }
+nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin-bottom: 36px; }
+nav .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; text-decoration: none; color: var(--texte); margin-right: auto; }
+nav .logo span { width: 34px; height: 34px; border-radius: 9px; background: #14171C; display: flex; align-items: center; justify-content: center; }
+nav a:not(.logo) { font-size: 15px; font-weight: 600; text-decoration: none; }
+h1 { font-size: 36px; line-height: 1.1; margin: 0 0 8px; }
+.sur { font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--texte2); }
+h2 { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--texte2); margin: 28px 0 8px; }
+section { background: var(--carte); border: 1px solid var(--bord); border-radius: 18px; padding: 4px 20px 16px; margin-top: 16px; }
+.doux { color: var(--texte2); font-size: 14px; }
+.ia { display: flex; gap: 12px; align-items: flex-start; border-left: 4px solid var(--signal); }
+.ia b { display: block; }
+.bouton { display: inline-block; margin: 6px 8px 0 0; padding: 10px 16px; border-radius: 22px; background: var(--signal); color: #1A1204;
+          font-weight: 700; text-decoration: none; }
+.bouton.second { background: transparent; color: var(--texte); border: 1px solid var(--bord); }
+footer { margin-top: 40px; font-size: 13px; color: var(--texte2); text-align: center; }
+ul { padding-left: 20px; }
