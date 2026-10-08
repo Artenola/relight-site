@@ -3,8 +3,8 @@
 Site public de **Relight**, application iPhone indépendante pour piloter et régler les feux Cosmo Ride et la
 télécommande Cosmo Remote de Cosmo Connected (société en liquidation judiciaire, application officielle hors service).
 
-- Assistance : https://artenola.github.io/relight/
-- Confidentialité : https://artenola.github.io/relight/confidentialite.html
+- Assistance : https://artenola.github.io/relight-site/
+- Confidentialité : https://artenola.github.io/relight-site/confidentialite.html
 - Signaler un problème : onglet **Issues**
 
 Relight a été **générée par intelligence artificielle** (Claude, d'Anthropic). Projet non affilié à Cosmo Connected.
