@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Redirection…</title>
+  <link rel="canonical" href="https://florent-coulon-deville.github.io/relight-site/">
+  <meta http-equiv="refresh" content="0; url=https://florent-coulon-deville.github.io/relight-site/">
+  <script>
+    const OLD = "/relight-site";
+    const NEW = "https://florent-coulon-deville.github.io/relight-site";
+    let path = location.pathname.startsWith(OLD) ? location.pathname.slice(OLD.length) : location.pathname;
+    location.replace(NEW + (path || "/") + location.search + location.hash);
+  </script>
+</head>
+<body>
+  <p>Ce site a déménagé : <a href="https://florent-coulon-deville.github.io/relight-site/">florent-coulon-deville.github.io/relight-site</a></p>
+</body>
+</html>
